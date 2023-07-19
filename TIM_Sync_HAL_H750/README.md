@@ -7,3 +7,5 @@
 为了方便观察，两个TIM的CH1都设置为PWM输出方式：TIM1_CH1 -> PE9 、 TIM3_CH1 -> PA6 。
 
 除默认生成的代码，只在 main.c 文件添加几行手动编写的代码。
+
+对于哪个TIM可以被哪个TIM触发，ITRx是多少可以参考芯片参考手册的 TIMx internal trigger connection (TIMx 内部触发连接) 表格。
