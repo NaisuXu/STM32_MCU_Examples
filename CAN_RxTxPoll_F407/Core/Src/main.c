@@ -140,6 +140,7 @@ int main(void)
 			{
 				TxHeader.ExtId = RxHeader.ExtId; // 扩展帧ID
 			}
+			TxHeader.IDE = RxHeader.IDE; // ID类型
 
 			TxHeader.RTR = RxHeader.RTR; // CAN_RTR_DATA 数据帧；CAN_RTR_REMOTE 远程帧
 
