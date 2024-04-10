@@ -5,3 +5,5 @@ FDCAN工作在可变波特率正常模式，仲裁段波特率为500k，数据�
 
 PD0 ------> FDCAN1_RX
 PD1 ------> FDCAN1_TX
+
+需要注意的是对于波提率大于1M的情况下需要配置TDC（Transceiver Delay Compensation收发器延迟补偿），不然有可能会收发异常，该例程中并为处理，有需要的可以参考芯片手册进行配置。
